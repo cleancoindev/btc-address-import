@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "bitcoin-core": "^2.0.0",
+    "lokijs": "^1.5.5",
+    "math": "^0.0.3",
+    "optimist": "^0.6.1"
+  }
+}
