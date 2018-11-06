@@ -1,17 +1,16 @@
 # BTC Address Import and Export Tools
 
-Btc Address Export means ([Btc Node] -> [LocalDb File]) from Btc node to local db file.
+Btc Address `Export` means ([`Btc Node`] -> [`LocalDb File`]) from Btc node to local db file.
 
-Btc Address Import means ([LocalDb File] -> [Btc Node]) from local db file to Btc node. 
+Btc Address `Import` means ([`LocalDb File`] -> [`Btc Node`]) from local db file to Btc node. 
 
 We have three main function:
 
 1. Export: [Btc Node] -> [LocalDb File]
 2. Import: [LocalDb File] -> [Btc Node]
 3. Show: Show addresses and timestamp in local db file.
-------------
-## First: Config in coinNodeConfig.json File.
--------------
+
+## Step 1: Edit the coinNodeConfig.json File.
 
 ````
 {
@@ -22,20 +21,18 @@ We have three main function:
 }
 ````
 
-As above the url is btc node's address and port.
+As above the `url` is btc node's `address` and `port`.
 
-The network fill mainnet or testnet.
+The network fill `mainnet` or `testnet`.
 
-And fill the username and password of btc node rpc.
+And fill the `username` and `password` of btc node `rpc`.
 
-------------
-## Second: Try to Export from an exist node.
-------------
+## Step 2: Try to Export from an exist btc node.
 
 Use the command below to export addresses to local db file.
 
 ````
-node -t export -f test.db
+$ node -t export -f test.db
 
 start
 Using database file: /Users/molin/workspace/btc-address-import/test.db
@@ -59,12 +56,11 @@ Address [{"address":"1LcyJgYXRBNE8hTVrj3ef5p8rGdNApxLRf","time":1534000000,"meta
 export finish!
 ````
 
----------
-## Thirdly: Show and View the addresses in local db file.
----------
+
+## Step 3: Show and View the addresses in local db file.
 
 ````
-node index.js -t show -f test.db
+$ node index.js -t show -f test.db
 
 start
 Using database file: /Users/molin/workspace/btc-address-import/test.db
@@ -101,14 +97,12 @@ show finish
 
 ````
 
-### You can manual change the db file by any text editor in json language. 
+### You can `manually` change the `db file` by any text editor in `json` language. 
 
----------
-## Fourthly: Import from the db file to btc node.
----------
+## Step 4: Import from the db file to btc node.
 
 ````
-node index.js -t import -f testnet.db
+$ node index.js -t import -f testnet.db
 
 start
 Using database file: /Users/molin/workspace/btc-address-import/testnet.db
