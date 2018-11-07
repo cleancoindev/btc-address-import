@@ -10,6 +10,15 @@ We have three main function:
 2. Import: [LocalDb File] -> [Btc Node]
 3. Show: Show addresses and timestamp in local db file.
 
+## How to get the tools
+
+````
+$ git clone https://github.com/molin0000/btc-address-import.git
+$ cd btc-address-import
+$ npm install
+$ node index.js
+````
+
 ## Step 1: Edit the coinNodeConfig.json File.
 
 ````
