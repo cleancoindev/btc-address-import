@@ -1,5 +1,14 @@
 # BTC Address Import and Export Tools
 
+
+# Use the shell script
+
+```
+$ ./node-btc-address.sh
+```
+
+# Use the javascript
+
 Btc Address `Export` means ([`Btc Node`] -> [`LocalDb File`]) from Btc node to local db file.
 
 Btc Address `Import` means ([`LocalDb File`] -> [`Btc Node`]) from local db file to Btc node. 
