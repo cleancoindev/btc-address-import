@@ -1,15 +1,19 @@
 #!/bin/bash
 
 # First, you should fill the information below ######
-node_ip='54.245.197.12';#'54.245.197.12';#'54.185.138.211';
-node_port=18332;
-node_user='wanglu';
-node_password='Wanchain888';
+node_ip='127.0.0.1';#Your btc node rpc-ip
+node_port=18332;    #Your btc node rpc-port
+node_user='';       #Your btc node rpc-user
+node_password='';   #Your btc node rpc-password
 rescan_from_time=1543399060; 
 # 1539000000 = 2018-10-08T12:00:00.000Z 
 # You can use: date +%s to print now timestamp
 # date -r timestamp to parse utc to time (Mac OS)
 # date -d @timestamp to parse utc to time (Linux)
+##############################################
+# ATTENTION: Please make sure you are use the binary bitcoin-cli, if not this script will install a js one. 
+# For js must make sure the bitcoind-rpc have "importMulti: 'obj obj'," line 220 in bitcoind-rpc/lib/index.js.
+# Or you should add it manually, otherwise it will prompt 'invalid RPC method.'
 ##############################################
 
 
