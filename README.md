@@ -1,7 +1,7 @@
 # BTC Address Import and Export Tools
 
 
-# Use the shell script
+# Use the shell script on MacOS is nice
 
 ```
 $ ./node-btc-address.sh
